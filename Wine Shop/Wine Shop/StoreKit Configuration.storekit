@@ -1,0 +1,153 @@
+{
+  "identifier" : "99C4E327",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "5D0F4F2A",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Cabernet Sauvignon",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "wine.cabernet-sauvignon",
+      "referenceName" : null,
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "11.99",
+      "familyShareable" : false,
+      "internalID" : "6ED53E53",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Carménère",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "wine.carmenere",
+      "referenceName" : null,
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "19.99",
+      "familyShareable" : false,
+      "internalID" : "E73A489F",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Malbec",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "wine.malbec",
+      "referenceName" : null,
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "2972EF50",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Merlot",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "wine.merlot",
+      "referenceName" : null,
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "19.99",
+      "familyShareable" : false,
+      "internalID" : "0FF54CD4",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Tempranillo",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "wine.tempranillo",
+      "referenceName" : null,
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "29.99",
+      "familyShareable" : false,
+      "internalID" : "FD052B94",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Pinot Noir",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "wine.pinot-noir",
+      "referenceName" : null,
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "F6519257",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Syrah",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "wine.syrah",
+      "referenceName" : null,
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "12.99",
+      "familyShareable" : false,
+      "internalID" : "407F401B",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Chardonnay",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "wine.chardonnay",
+      "referenceName" : null,
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "13.99",
+      "familyShareable" : false,
+      "internalID" : "2C4E7DB9",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Sauvignon Blanc",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "wine.sauvignon-blanc",
+      "referenceName" : null,
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 2
+  }
+}

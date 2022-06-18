@@ -33,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB3E9ACF285D4C1500028857 /* StoreKit Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "StoreKit Configuration.storekit"; sourceTree = "<group>"; };
 		AB447E87285966FF00370BF6 /* Wine Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wine Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB447E8A285966FF00370BF6 /* WineShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineShopApp.swift; sourceTree = "<group>"; };
 		AB447E8C285966FF00370BF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,8 +93,9 @@
 		AB447E89285966FF00370BF6 /* Wine Shop */ = {
 			isa = PBXGroup;
 			children = (
-				AB447E8A285966FF00370BF6 /* WineShopApp.swift */,
+				AB3E9ACF285D4C1500028857 /* StoreKit Configuration.storekit */,
 				AB447E8C285966FF00370BF6 /* ContentView.swift */,
+				AB447E8A285966FF00370BF6 /* WineShopApp.swift */,
 				AB447E8E2859670000370BF6 /* Assets.xcassets */,
 				AB447E902859670000370BF6 /* Preview Content */,
 			);
