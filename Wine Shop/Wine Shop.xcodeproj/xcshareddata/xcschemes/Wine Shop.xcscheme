@@ -82,7 +82,7 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
-         identifier = "../../Wine Shop/StoreKit Configuration.storekit">
+         identifier = "../../Wine Shop/Product/StoreKit Configuration.storekit">
       </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
