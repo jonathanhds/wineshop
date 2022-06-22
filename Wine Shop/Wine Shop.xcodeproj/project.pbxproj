@@ -10,11 +10,12 @@
 		AB3E9AD7285D529800028857 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E9AD6285D529800028857 /* Product.swift */; };
 		AB3E9AD9285D54AF00028857 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E9AD8285D54AF00028857 /* Store.swift */; };
 		AB447E8B285966FF00370BF6 /* WineShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447E8A285966FF00370BF6 /* WineShopApp.swift */; };
-		AB447E8D285966FF00370BF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447E8C285966FF00370BF6 /* ContentView.swift */; };
 		AB447E8F2859670000370BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB447E8E2859670000370BF6 /* Assets.xcassets */; };
 		AB447E922859670000370BF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB447E912859670000370BF6 /* Preview Assets.xcassets */; };
 		AB447E9C2859670000370BF6 /* WineShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447E9B2859670000370BF6 /* WineShopTests.swift */; };
 		AB447EA62859670000370BF6 /* WineShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447EA52859670000370BF6 /* WineShopUITests.swift */; };
+		AB48B24B2862972800259270 /* ProductsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48B24A2862972800259270 /* ProductsListView.swift */; };
+		AB48B24D2862987500259270 /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48B24C2862987500259270 /* ProductsListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +41,14 @@
 		AB3E9AD8285D54AF00028857 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		AB447E87285966FF00370BF6 /* Wine Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wine Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB447E8A285966FF00370BF6 /* WineShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineShopApp.swift; sourceTree = "<group>"; };
-		AB447E8C285966FF00370BF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB447E8E2859670000370BF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB447E912859670000370BF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB447E972859670000370BF6 /* Wine ShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wine ShopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB447E9B2859670000370BF6 /* WineShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineShopTests.swift; sourceTree = "<group>"; };
 		AB447EA12859670000370BF6 /* Wine ShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wine ShopUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB447EA52859670000370BF6 /* WineShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineShopUITests.swift; sourceTree = "<group>"; };
+		AB48B24A2862972800259270 /* ProductsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListView.swift; sourceTree = "<group>"; };
+		AB48B24C2862987500259270 /* ProductsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				AB447E8E2859670000370BF6 /* Assets.xcassets */,
-				AB447E8C285966FF00370BF6 /* ContentView.swift */,
+				AB48B2482862970200259270 /* Features */,
 				AB447E902859670000370BF6 /* Preview Content */,
 				AB3E9AD5285D528D00028857 /* Product */,
 				AB447E8A285966FF00370BF6 /* WineShopApp.swift */,
@@ -138,6 +140,23 @@
 				AB447EA52859670000370BF6 /* WineShopUITests.swift */,
 			);
 			path = "Wine ShopUITests";
+			sourceTree = "<group>";
+		};
+		AB48B2482862970200259270 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AB48B2492862971300259270 /* Products list */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AB48B2492862971300259270 /* Products list */ = {
+			isa = PBXGroup;
+			children = (
+				AB48B24A2862972800259270 /* ProductsListView.swift */,
+				AB48B24C2862987500259270 /* ProductsListViewModel.swift */,
+			);
+			path = "Products list";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB447E8D285966FF00370BF6 /* ContentView.swift in Sources */,
+				AB48B24B2862972800259270 /* ProductsListView.swift in Sources */,
 				AB447E8B285966FF00370BF6 /* WineShopApp.swift in Sources */,
 				AB3E9AD7285D529800028857 /* Product.swift in Sources */,
 				AB3E9AD9285D54AF00028857 /* Store.swift in Sources */,
+				AB48B24D2862987500259270 /* ProductsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -4,7 +4,14 @@ import SwiftUI
 struct WineShopApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			TabView {
+				NavigationView {
+					ProductsListView()
+				}
+				.tabItem {
+					Label("Products", systemImage: "cart")
+				}
+			}
         }
     }
 }
