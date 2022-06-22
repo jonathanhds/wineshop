@@ -1,4 +1,6 @@
-let ALL_PRODUCTS_IDS = [
+import Foundation
+
+let ALL_PRODUCTS_IDS = Set([
 	"wine.cabernet-sauvignon",
 	"wine.carmenere",
 	"wine.malbec",
@@ -8,4 +10,18 @@ let ALL_PRODUCTS_IDS = [
 	"wine.syrah",
 	"wine.chardonnay",
 	"wine.sauvignon-blanc"
-]
+])
+
+struct Product: Identifiable {
+	let id: String
+	let name: String
+	let description: String
+	let price: Decimal
+}
+
+extension Product: CustomDebugStringConvertible {
+
+	var debugDescription: String {
+		"Product [id: \(id), name: \(name), description: \(description), price: \(price)]"
+	}
+}

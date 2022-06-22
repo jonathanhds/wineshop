@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB3E9AD7285D529800028857 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E9AD6285D529800028857 /* Product.swift */; };
+		AB3E9AD9285D54AF00028857 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E9AD8285D54AF00028857 /* Store.swift */; };
 		AB447E8B285966FF00370BF6 /* WineShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447E8A285966FF00370BF6 /* WineShopApp.swift */; };
 		AB447E8D285966FF00370BF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447E8C285966FF00370BF6 /* ContentView.swift */; };
 		AB447E8F2859670000370BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB447E8E2859670000370BF6 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		AB3E9ACF285D4C1500028857 /* StoreKit Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "StoreKit Configuration.storekit"; sourceTree = "<group>"; };
 		AB3E9AD6285D529800028857 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		AB3E9AD8285D54AF00028857 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		AB447E87285966FF00370BF6 /* Wine Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wine Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB447E8A285966FF00370BF6 /* WineShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineShopApp.swift; sourceTree = "<group>"; };
 		AB447E8C285966FF00370BF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				AB3E9AD6285D529800028857 /* Product.swift */,
+				AB3E9AD8285D54AF00028857 /* Store.swift */,
 				AB3E9ACF285D4C1500028857 /* StoreKit Configuration.storekit */,
 			);
 			path = Product;
@@ -270,6 +273,7 @@
 				AB447E8D285966FF00370BF6 /* ContentView.swift in Sources */,
 				AB447E8B285966FF00370BF6 /* WineShopApp.swift in Sources */,
 				AB3E9AD7285D529800028857 /* Product.swift in Sources */,
+				AB3E9AD9285D54AF00028857 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
