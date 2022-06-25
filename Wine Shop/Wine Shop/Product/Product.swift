@@ -16,7 +16,8 @@ struct Product: Identifiable {
 	let id: String
 	let name: String
 	let description: String
-	let price: Decimal
+	let thumbnailImage: String?
+	let price: String
 }
 
 extension Product: CustomDebugStringConvertible {

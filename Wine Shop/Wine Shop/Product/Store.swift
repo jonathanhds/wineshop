@@ -12,7 +12,8 @@ final class Store {
 			Product(id: product.id,
 					name: product.displayName,
 					description: product.description,
-					price: product.price)
+					thumbnailImage: nil,
+					price: product.displayPrice)
 		}
 	}
 }

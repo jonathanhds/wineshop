@@ -27,7 +27,7 @@ struct ProductsListView: View {
 
 	private func productsList(_ products: [Product]) -> some View {
 		List(products) { product in
-			Text(product.name)
+			ProductRowView(product: product)
 		}
 	}
 }
