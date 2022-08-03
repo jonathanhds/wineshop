@@ -15,7 +15,7 @@ let ALL_PRODUCTS_IDS = Set([
 struct Product: Identifiable {
 	let id: String
 	let name: String
-	let description: String
+	let description: String?
 	let thumbnailImage: String?
 	let price: String
 }
@@ -23,6 +23,6 @@ struct Product: Identifiable {
 extension Product: CustomDebugStringConvertible {
 
 	var debugDescription: String {
-		"Product [id: \(id), name: \(name), description: \(description), price: \(price)]"
+		"Product [id: \(id), name: \(name), description: \(description ?? "nil"), price: \(price)]"
 	}
 }

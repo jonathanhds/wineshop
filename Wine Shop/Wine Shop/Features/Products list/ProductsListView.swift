@@ -27,7 +27,9 @@ struct ProductsListView: View {
 
 	private func productsList(_ products: [Product]) -> some View {
 		List(products) { product in
-			ProductRowView(product: product)
+			NavigationLink(destination: ProductDetailsView(product: product)) {
+				ProductRowView(product: product)
+			}
 		}
 	}
 }

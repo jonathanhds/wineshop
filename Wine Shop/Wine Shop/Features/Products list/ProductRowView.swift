@@ -14,10 +14,6 @@ struct ProductRowView: View {
 
 			VStack(alignment: .leading) {
 				Text(product.name)
-
-				if (!product.description.isEmpty) {
-					Text(product.description)
-				}
 			}
 
 			Spacer()
