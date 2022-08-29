@@ -27,7 +27,7 @@ struct ProductsListView: View {
 
 	private func productsList(_ products: [Product]) -> some View {
 		List(products) { product in
-			NavigationLink(destination: ProductDetailsView(product: product)) {
+			NavigationLink(destination: ProductDetailsView(viewModel: .init(product: product))) {
 				ProductRowView(product: product)
 			}
 		}

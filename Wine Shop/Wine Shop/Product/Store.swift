@@ -1,5 +1,9 @@
 import StoreKit
 
+enum StoreError: Error {
+	case productNotFound
+}
+
 final class Store {
 
 	static let shared = Store()
@@ -15,6 +19,29 @@ final class Store {
 						   description: metadata["description"],
 						   thumbnailImage: metadata["thumbnailImage"],
 						   price: product.displayPrice)
+		}
+	}
+
+	func buy(product: Product) async throws {
+		let storeKitProducts = try await StoreKit.Product.products(for: [product.id])
+		guard let storeKitProduct = storeKitProducts.first else { throw StoreError.productNotFound }
+
+		let purchaseResult = try await storeKitProduct.purchase()
+
+		switch purchaseResult {
+		case .success(let verificationResult):
+			switch verificationResult {
+			case .verified(let transaction):
+				await transaction.finish()
+			case .unverified:
+				break
+			}
+		case .pending:
+			break
+		case .userCancelled:
+			break
+		@unknown default:
+			break
 		}
 	}
 

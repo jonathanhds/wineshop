@@ -2,13 +2,13 @@ import SwiftUI
 
 struct ProductDetailsView: View {
 
-	let product: Product
+	let viewModel: ProductDetailsViewModel
 
 	var body: some View {
 		ScrollView {
 			VStack(spacing: 20) {
 				Group {
-					if let thumbnailImage = product.thumbnailImage {
+					if let thumbnailImage = viewModel.thumbnailImage {
 						Image(thumbnailImage)
 					} else {
 						Image("wine")
@@ -17,7 +17,7 @@ struct ProductDetailsView: View {
 					}
 				}
 
-				if let description = product.description {
+				if let description = viewModel.description {
 					VStack(alignment: .leading) {
 						Text("Description")
 							.font(.headline)
@@ -25,11 +25,13 @@ struct ProductDetailsView: View {
 					}
 				}
 
-				Text(product.price)
+				Text(viewModel.price)
 					.font(.caption)
 
 				Button(action: {
-
+					Task {
+						await viewModel.buy()
+					}
 				}, label: {
 					Label("Buy", systemImage: "cart")
 				})
@@ -40,18 +42,18 @@ struct ProductDetailsView: View {
 			}
 			.padding([.leading, .trailing])
 		}
-		.navigationTitle(product.name)
+		.navigationTitle(viewModel.name)
 	}
 }
 
 struct ProductDetailsView_Previews: PreviewProvider {
 	static var previews: some View {
 		NavigationView {
-			ProductDetailsView(product: Product(id: "2",
-												name: "Carménère",
-												description: "",
-												thumbnailImage: nil,
-												price: "US$ 11,00"))
+			ProductDetailsView(viewModel: .init(product: Product(id: "2",
+																 name: "Carménère",
+																 description: "",
+																 thumbnailImage: nil,
+																 price: "US$ 11,00")))
 		}
 	}
 }

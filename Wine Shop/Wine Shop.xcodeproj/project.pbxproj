@@ -16,6 +16,7 @@
 		AB447EA62859670000370BF6 /* WineShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447EA52859670000370BF6 /* WineShopUITests.swift */; };
 		AB48B24B2862972800259270 /* ProductsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48B24A2862972800259270 /* ProductsListView.swift */; };
 		AB48B24D2862987500259270 /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48B24C2862987500259270 /* ProductsListViewModel.swift */; };
+		AB8965EA28BD091B0088922A /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8965E928BD091B0088922A /* ProductDetailsViewModel.swift */; };
 		AB8BDBC02866868900DD49F2 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8BDBBF2866868900DD49F2 /* ProductRowView.swift */; };
 		AB8BDBC32866919700DD49F2 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8BDBC22866919700DD49F2 /* ProductDetailsView.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		AB447EA52859670000370BF6 /* WineShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineShopUITests.swift; sourceTree = "<group>"; };
 		AB48B24A2862972800259270 /* ProductsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListView.swift; sourceTree = "<group>"; };
 		AB48B24C2862987500259270 /* ProductsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
+		AB8965E928BD091B0088922A /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 		AB8BDBBF2866868900DD49F2 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
 		AB8BDBC22866919700DD49F2 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				AB8BDBC22866919700DD49F2 /* ProductDetailsView.swift */,
+				AB8965E928BD091B0088922A /* ProductDetailsViewModel.swift */,
 			);
 			path = "Product details";
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				AB48B24B2862972800259270 /* ProductsListView.swift in Sources */,
 				AB447E8B285966FF00370BF6 /* WineShopApp.swift in Sources */,
 				AB8BDBC02866868900DD49F2 /* ProductRowView.swift in Sources */,
+				AB8965EA28BD091B0088922A /* ProductDetailsViewModel.swift in Sources */,
 				AB3E9AD7285D529800028857 /* Product.swift in Sources */,
 				AB8BDBC32866919700DD49F2 /* ProductDetailsView.swift in Sources */,
 				AB3E9AD9285D54AF00028857 /* Store.swift in Sources */,
