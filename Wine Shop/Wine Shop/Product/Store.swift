@@ -31,11 +31,15 @@ final class Store {
 		}
 	}
 
-	func buy(product: Product) async throws {
+	func buy(product: Product, quantity: Int? = nil) async throws {
 		let storeKitProducts = try await StoreKit.Product.products(for: [product.id])
 		guard let storeKitProduct = storeKitProducts.first else { throw StoreError.productNotFound }
 
-		let purchaseResult = try await storeKitProduct.purchase()
+		var options: Set<StoreKit.Product.PurchaseOption> = []
+		if let quantity = quantity {
+			options.insert(.quantity(quantity))
+		}
+		let purchaseResult = try await storeKitProduct.purchase(options: options)
 
 		switch purchaseResult {
 		case .success(let verificationResult):
