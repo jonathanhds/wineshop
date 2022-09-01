@@ -8,7 +8,16 @@ final class Store {
 
 	static let shared = Store()
 
-	private init() {}
+	private var storeKitTaskHandle: Task<Void, Error>?
+
+	private init() {
+		storeKitTaskHandle = listenForStoreKitUpdates()
+	}
+
+	deinit {
+		storeKitTaskHandle?.cancel()
+		storeKitTaskHandle = nil
+	}
 
 	func fetchAllProducts() async throws -> [Product] {
 		let products = try await StoreKit.Product.products(for: ALL_PRODUCTS_IDS)
@@ -53,6 +62,21 @@ final class Store {
 			]
 		default:
 			return [:]
+		}
+	}
+
+	private func listenForStoreKitUpdates() -> Task<Void, Error> {
+		Task.detached {
+			for await result in Transaction.updates {
+				switch result {
+				case .verified(let transaction):
+					print("Transaction verified in listener")
+					await transaction.finish()
+					// Update the user's purchases...
+				case .unverified:
+					print("Transaction unverified")
+				}
+			}
 		}
 	}
 }
