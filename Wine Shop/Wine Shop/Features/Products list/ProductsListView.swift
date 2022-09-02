@@ -36,6 +36,13 @@ struct ProductsListView: View {
 
 struct ProductsListView_Previews: PreviewProvider {
 	static var previews: some View {
-		ProductsListView()
+		TabView {
+			NavigationView {
+				ProductsListView()
+			}
+			.tabItem {
+				Label("Products", systemImage: "cart")
+			}
+		}
 	}
 }

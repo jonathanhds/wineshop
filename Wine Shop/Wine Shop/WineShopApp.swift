@@ -11,6 +11,13 @@ struct WineShopApp: App {
 				.tabItem {
 					Label("Products", systemImage: "cart")
 				}
+
+				NavigationView {
+					PurchasesHistoryView()
+				}
+				.tabItem {
+					Label("History", systemImage: "clock")
+				}
 			}
         }
     }

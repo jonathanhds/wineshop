@@ -48,7 +48,7 @@ final class Store {
 			switch verificationResult {
 			case .verified(let transaction):
 				await transaction.finish()
-				await storage.increment(quantity: quantity ?? 1, for: product)
+				await storage.persistPurchase(product: product, quantity: quantity ?? 1)
 			case .unverified:
 				break
 			}
@@ -59,6 +59,10 @@ final class Store {
 		@unknown default:
 			break
 		}
+	}
+
+	func fetchPurchasesHistory() async -> [Purchase]  {
+		await storage.fetchPurchasesHistory()
 	}
 
 	private func findMetadata(for product: StoreKit.Product) -> [String: String] {

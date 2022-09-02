@@ -1,18 +1,18 @@
+import Foundation
+
 final actor PurchasesStorage {
 
-	private var purchases: [String: Int] = [:]
+	private var purchaseHistory: [Purchase] = []
 
-	func fetchPurchasedProductsIDs() -> [String] {
-		purchases
-			.filter { $0.value > 0 }
-			.map { $0.key }
+	func persistPurchase(product: Product, quantity: Int) {
+		purchaseHistory.append(Purchase(
+			product: product,
+			quantity: quantity,
+			date: Date()
+		))
 	}
 
-	func increment(quantity: Int = 1, for product: Product) {
-		if let purchasedQuantity = purchases[product.id] {
-			purchases[product.id] = purchasedQuantity + quantity
-		} else {
-			purchases[product.id] = quantity
-		}
+	func fetchPurchasesHistory() -> [Purchase] {
+		purchaseHistory
 	}
 }
