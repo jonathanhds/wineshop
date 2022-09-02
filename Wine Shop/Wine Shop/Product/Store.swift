@@ -8,6 +8,8 @@ final class Store {
 
 	static let shared = Store()
 
+	private let storage = PurchasesStorage()
+
 	private var storeKitTaskHandle: Task<Void, Error>?
 
 	private init() {
@@ -46,6 +48,7 @@ final class Store {
 			switch verificationResult {
 			case .verified(let transaction):
 				await transaction.finish()
+				await storage.increment(quantity: quantity ?? 1, for: product)
 			case .unverified:
 				break
 			}
