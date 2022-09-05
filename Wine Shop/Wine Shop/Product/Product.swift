@@ -21,8 +21,17 @@ struct Product: Identifiable {
 }
 
 extension Product: CustomDebugStringConvertible {
-
 	var debugDescription: String {
 		"Product [id: \(id), name: \(name), description: \(description ?? "nil"), price: \(price)]"
 	}
 }
+
+#if DEBUG
+extension Product {
+	static let cabernetSauvignon = Product(id: "1",
+										   name: "Cabernet Sauvignon",
+										   description: "",
+										   thumbnailImage: nil,
+										   price: "US$ 9,99")
+}
+#endif

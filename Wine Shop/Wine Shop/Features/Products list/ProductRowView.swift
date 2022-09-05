@@ -29,11 +29,7 @@ struct ProductRowView: View {
 struct ProductRowView_Previews: PreviewProvider {
 	static var previews: some View {
 		Group {
-			ProductRowView(product: Product(id: "1",
-											name: "Cabernet Sauvignon",
-											description: "",
-											thumbnailImage: nil,
-											price: "US$ 9,99"))
+			ProductRowView(product: .cabernetSauvignon)
 		}
 		.previewLayout(.fixed(width: 400, height: 50))
 	}

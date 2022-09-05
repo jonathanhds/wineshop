@@ -4,6 +4,10 @@ struct ProductDetailsView: View {
 
 	let viewModel: ProductDetailsViewModel
 
+	init(product: Product) {
+		viewModel = .init(product: product)
+	}
+
 	var body: some View {
 		ScrollView {
 			VStack(spacing: 20) {
@@ -49,11 +53,7 @@ struct ProductDetailsView: View {
 struct ProductDetailsView_Previews: PreviewProvider {
 	static var previews: some View {
 		NavigationView {
-			ProductDetailsView(viewModel: .init(product: Product(id: "2",
-																 name: "Carménère",
-																 description: "",
-																 thumbnailImage: nil,
-																 price: "US$ 11,00")))
+			ProductDetailsView(product: .cabernetSauvignon)
 		}
 	}
 }

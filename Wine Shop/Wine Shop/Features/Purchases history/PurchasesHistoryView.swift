@@ -14,7 +14,7 @@ struct PurchasesHistoryView: View {
 				Text("Empty")
 			case .data(let purchasesHistory):
 				List(purchasesHistory) { row in
-					Text("\(row.product.name)")
+					PurchaseRowView(purchase: row)
 				}
 			}
 		}
