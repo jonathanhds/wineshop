@@ -144,7 +144,65 @@
 
   },
   "subscriptionGroups" : [
+    {
+      "id" : "4403A006",
+      "localizations" : [
 
+      ],
+      "name" : "Wine Subscriptions",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "4FC5E1D2",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "Wine Shop Plus",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "wine-shop.plus",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Wine Shop Plus",
+          "subscriptionGroupID" : "4403A006",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "9.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "DC2D268E",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "Wine Shop Pro",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "wine-shop.pro",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Wine Shop Pro",
+          "subscriptionGroupID" : "4403A006",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
   ],
   "version" : {
     "major" : 1,
