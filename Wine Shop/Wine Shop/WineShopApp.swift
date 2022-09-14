@@ -13,6 +13,13 @@ struct WineShopApp: App {
 				}
 
 				NavigationView {
+					SubscriptionsListView()
+				}
+				.tabItem {
+					Label("Subscriptions", systemImage: "shippingbox")
+				}
+
+				NavigationView {
 					PurchasesHistoryView()
 				}
 				.tabItem {

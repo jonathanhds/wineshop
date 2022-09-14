@@ -19,7 +19,7 @@ struct ProductsListView: View {
 				productsList(products)
 			}
 		}
-		.navigationTitle(Text("Products"))
+		.navigationTitle("Products")
 		.task {
 			await viewModel.fetchAllProducts()
 		}
