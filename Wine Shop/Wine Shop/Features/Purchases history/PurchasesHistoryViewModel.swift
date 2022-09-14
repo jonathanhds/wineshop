@@ -1,5 +1,6 @@
 import Combine
 
+@MainActor
 final class PurchasesHistoryViewModel: ObservableObject {
 
 	enum State {
