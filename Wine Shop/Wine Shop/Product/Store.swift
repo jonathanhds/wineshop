@@ -22,7 +22,15 @@ final class Store {
 	}
 
 	func fetchAllProducts() async throws -> [Product] {
-		let products = try await StoreKit.Product.products(for: ALL_PRODUCTS_IDS)
+		try await fetchProducts(ids: ALL_PRODUCTS_IDS)
+	}
+
+	func fetchAllSubscriptions() async throws -> [Product] {
+		try await fetchProducts(ids: ALL_SUBSCRIPTIONS_IDS)
+	}
+
+	private func fetchProducts(ids: Set<String>) async throws -> [Product] {
+		let products = try await StoreKit.Product.products(for: ids)
 		return products.map { product in
 			let metadata = findMetadata(for: product)
 			return Product(id: product.id,

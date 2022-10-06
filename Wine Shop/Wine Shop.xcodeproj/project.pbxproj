@@ -16,6 +16,7 @@
 		AB447EA62859670000370BF6 /* WineShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB447EA52859670000370BF6 /* WineShopUITests.swift */; };
 		AB48B24B2862972800259270 /* ProductsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48B24A2862972800259270 /* ProductsListView.swift */; };
 		AB48B24D2862987500259270 /* ProductsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48B24C2862987500259270 /* ProductsListViewModel.swift */; };
+		AB89423028DB580700E4F6D4 /* SubscriptionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89422F28DB580700E4F6D4 /* SubscriptionContentView.swift */; };
 		AB8965EA28BD091B0088922A /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8965E928BD091B0088922A /* ProductDetailsViewModel.swift */; };
 		AB8BDBC02866868900DD49F2 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8BDBBF2866868900DD49F2 /* ProductRowView.swift */; };
 		AB8BDBC32866919700DD49F2 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8BDBC22866919700DD49F2 /* ProductDetailsView.swift */; };
@@ -26,6 +27,8 @@
 		ABB4C98728C24F4D00BB626C /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB4C98628C24F4D00BB626C /* Purchase.swift */; };
 		ABC9A3F828D21F0B00E3530C /* SubscriptionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A3F728D21F0B00E3530C /* SubscriptionsListView.swift */; };
 		ABC9A3FA28D2203B00E3530C /* SubscriptionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9A3F928D2203B00E3530C /* SubscriptionsListViewModel.swift */; };
+		ABFF2FB628DA092100F6D062 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF2FB528DA092100F6D062 /* LoadingView.swift */; };
+		ABFF2FB828DA09D600F6D062 /* SubscriptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF2FB728DA09D600F6D062 /* SubscriptionRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,7 @@
 		AB447EA52859670000370BF6 /* WineShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineShopUITests.swift; sourceTree = "<group>"; };
 		AB48B24A2862972800259270 /* ProductsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListView.swift; sourceTree = "<group>"; };
 		AB48B24C2862987500259270 /* ProductsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewModel.swift; sourceTree = "<group>"; };
+		AB89422F28DB580700E4F6D4 /* SubscriptionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionContentView.swift; sourceTree = "<group>"; };
 		AB8965E928BD091B0088922A /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
 		AB8BDBBF2866868900DD49F2 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
 		AB8BDBC22866919700DD49F2 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 		ABB4C98628C24F4D00BB626C /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 		ABC9A3F728D21F0B00E3530C /* SubscriptionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsListView.swift; sourceTree = "<group>"; };
 		ABC9A3F928D2203B00E3530C /* SubscriptionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsListViewModel.swift; sourceTree = "<group>"; };
+		ABFF2FB528DA092100F6D062 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		ABFF2FB728DA09D600F6D062 /* SubscriptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,11 +137,12 @@
 		AB447E89285966FF00370BF6 /* Wine Shop */ = {
 			isa = PBXGroup;
 			children = (
+				AB447E8A285966FF00370BF6 /* WineShopApp.swift */,
 				AB447E8E2859670000370BF6 /* Assets.xcassets */,
+				ABFF2FB428DA091600F6D062 /* Components */,
 				AB48B2482862970200259270 /* Features */,
 				AB447E902859670000370BF6 /* Preview Content */,
 				AB3E9AD5285D528D00028857 /* Product */,
-				AB447E8A285966FF00370BF6 /* WineShopApp.swift */,
 			);
 			path = "Wine Shop";
 			sourceTree = "<group>";
@@ -207,10 +214,20 @@
 		ABC9A3F628D21EF900E3530C /* Subscriptions list */ = {
 			isa = PBXGroup;
 			children = (
+				AB89422F28DB580700E4F6D4 /* SubscriptionContentView.swift */,
+				ABFF2FB728DA09D600F6D062 /* SubscriptionRowView.swift */,
 				ABC9A3F728D21F0B00E3530C /* SubscriptionsListView.swift */,
 				ABC9A3F928D2203B00E3530C /* SubscriptionsListViewModel.swift */,
 			);
 			path = "Subscriptions list";
+			sourceTree = "<group>";
+		};
+		ABFF2FB428DA091600F6D062 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				ABFF2FB528DA092100F6D062 /* LoadingView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,10 +365,13 @@
 				AB8BDBC02866868900DD49F2 /* ProductRowView.swift in Sources */,
 				AB8965EA28BD091B0088922A /* ProductDetailsViewModel.swift in Sources */,
 				AB3E9AD7285D529800028857 /* Product.swift in Sources */,
+				ABFF2FB628DA092100F6D062 /* LoadingView.swift in Sources */,
 				ABB4C98528C24C0100BB626C /* PurchasesHistoryViewModel.swift in Sources */,
+				AB89423028DB580700E4F6D4 /* SubscriptionContentView.swift in Sources */,
 				ABC9A3FA28D2203B00E3530C /* SubscriptionsListViewModel.swift in Sources */,
 				AB8BDBC32866919700DD49F2 /* ProductDetailsView.swift in Sources */,
 				ABB4C98328C24A6400BB626C /* PurchasesHistoryView.swift in Sources */,
+				ABFF2FB828DA09D600F6D062 /* SubscriptionRowView.swift in Sources */,
 				ABB4C98728C24F4D00BB626C /* Purchase.swift in Sources */,
 				ABC9A3F828D21F0B00E3530C /* SubscriptionsListView.swift in Sources */,
 				AB3E9AD9285D54AF00028857 /* Store.swift in Sources */,

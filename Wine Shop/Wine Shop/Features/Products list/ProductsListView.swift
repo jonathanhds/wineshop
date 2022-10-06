@@ -11,7 +11,7 @@ struct ProductsListView: View {
 			case .empty:
 				Text("No products found!")
 			case .loading:
-				Text("Loading...")
+				LoadingView()
 			case .error(let error):
 				Text("**Failed to fetch products**\n\(error.localizedDescription)")
 					.multilineTextAlignment(.center)

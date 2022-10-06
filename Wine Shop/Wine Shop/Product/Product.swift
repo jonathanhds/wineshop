@@ -12,6 +12,11 @@ let ALL_PRODUCTS_IDS = Set([
 	"wine.sauvignon-blanc"
 ])
 
+let ALL_SUBSCRIPTIONS_IDS = Set([
+	"wine-shop.plus",
+	"wine-shop.pro"
+])
+
 struct Product: Identifiable {
 	let id: String
 	let name: String
@@ -29,9 +34,16 @@ extension Product: CustomDebugStringConvertible {
 #if DEBUG
 extension Product {
 	static let cabernetSauvignon = Product(id: "1",
-										   name: "Cabernet Sauvignon",
-										   description: "",
-										   thumbnailImage: nil,
-										   price: "US$ 9,99")
+																				 name: "Cabernet Sauvignon",
+																				 description: "",
+																				 thumbnailImage: nil,
+																				 price: "US$ 9,99")
+
+	static let wineShopPlus = Product(id: "2",
+																		name: "Wine Shop Plus",
+																		description: nil,
+																		thumbnailImage: nil,
+																		price: "US$ 9,99")
+
 }
 #endif

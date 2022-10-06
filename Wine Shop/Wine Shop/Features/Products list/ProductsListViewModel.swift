@@ -13,11 +13,17 @@ final class ProductsListViewModel: ObservableObject {
 	@Published
 	private(set) var state: State = .loading
 
+	private let store: Store
+
+	init(store: Store = .shared) {
+		self.store = store
+	}
+
 	func fetchAllProducts() async {
 		state = .loading
 
 		do {
-			let products = try await Store.shared.fetchAllProducts()
+			let products = try await store.fetchAllProducts()
 			state = products.isEmpty ? .empty : .data(products: products)
 		} catch {
 			state = .error(error: error)

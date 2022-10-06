@@ -9,7 +9,7 @@ struct PurchasesHistoryView: View {
 		Group {
 			switch viewModel.state {
 			case .loading:
-				ProgressView("Loading...")
+				LoadingView()
 			case .empty:
 				Text("Empty")
 			case .data(let purchasesHistory):
