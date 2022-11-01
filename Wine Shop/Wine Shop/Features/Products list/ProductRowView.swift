@@ -1,23 +1,23 @@
 import SwiftUI
 
 struct ProductRowView: View {
-
+	
 	private static let PLACEHOLDER_IMAGE = "wine"
-
+	
 	let product: Product
-
+	
 	var body: some View {
 		HStack {
 			Image(product.thumbnailImage ?? Self.PLACEHOLDER_IMAGE)
 				.resizable()
 				.frame(width: 50, height: 50)
-
+			
 			VStack(alignment: .leading) {
 				Text(product.name)
 			}
-
+			
 			Spacer()
-
+			
 			Text(product.price)
 				.font(.caption)
 		}

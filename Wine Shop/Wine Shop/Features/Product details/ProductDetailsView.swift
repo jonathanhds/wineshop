@@ -1,13 +1,13 @@
 import SwiftUI
 
 struct ProductDetailsView: View {
-
+	
 	let viewModel: ProductDetailsViewModel
-
+	
 	init(product: Product) {
 		viewModel = .init(product: product)
 	}
-
+	
 	var body: some View {
 		ScrollView {
 			VStack(spacing: 20) {
@@ -20,7 +20,7 @@ struct ProductDetailsView: View {
 							.aspectRatio(1.0, contentMode: .fit)
 					}
 				}
-
+				
 				if let description = viewModel.description {
 					VStack(alignment: .leading) {
 						Text("Description")
@@ -28,10 +28,10 @@ struct ProductDetailsView: View {
 						Text(description)
 					}
 				}
-
+				
 				Text(viewModel.price)
 					.font(.caption)
-
+				
 				Button(action: {
 					Task {
 						await viewModel.buy()

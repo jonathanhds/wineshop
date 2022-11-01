@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct SubscriptionsListView: View {
-
+	
 	@StateObject
 	private var viewModel = SubscriptionsListViewModel()
-
+	
 	var body: some View {
 		Group {
 			switch viewModel.state {

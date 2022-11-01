@@ -2,8 +2,8 @@ import SwiftUI
 
 @main
 struct WineShopApp: App {
-    var body: some Scene {
-        WindowGroup {
+	var body: some Scene {
+		WindowGroup {
 			TabView {
 				NavigationView {
 					ProductsListView()
@@ -26,6 +26,6 @@ struct WineShopApp: App {
 					Label("History", systemImage: "clock")
 				}
 			}
-        }
-    }
+		}
+	}
 }

@@ -38,12 +38,12 @@ extension Product {
 																				 description: "",
 																				 thumbnailImage: nil,
 																				 price: "US$ 9,99")
-
+	
 	static let wineShopPlus = Product(id: "2",
 																		name: "Wine Shop Plus",
 																		description: nil,
 																		thumbnailImage: nil,
 																		price: "US$ 9,99")
-
+	
 }
 #endif

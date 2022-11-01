@@ -34,10 +34,10 @@ final class Store {
 		return products.map { product in
 			let metadata = findMetadata(for: product)
 			return Product(id: product.id,
-						   name: product.displayName,
-						   description: metadata["description"],
-						   thumbnailImage: metadata["thumbnailImage"],
-						   price: product.displayPrice)
+										 name: product.displayName,
+										 description: metadata["description"],
+										 thumbnailImage: metadata["thumbnailImage"],
+										 price: product.displayPrice)
 		}
 	}
 

@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct PurchasesHistoryView: View {
-
+	
 	@StateObject
 	private var viewModel = PurchasesHistoryViewModel()
-
+	
 	var body: some View {
 		Group {
 			switch viewModel.state {

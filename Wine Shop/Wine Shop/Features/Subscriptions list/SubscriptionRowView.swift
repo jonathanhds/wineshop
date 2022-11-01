@@ -1,18 +1,18 @@
 import SwiftUI
 
 struct SubscriptionRowView: View {
-
+	
 	private let subscription: Product
-
+	
 	init(subscription: Product) {
 		self.subscription = subscription
 	}
-
+	
 	var body: some View {
 		ZStack {
 			Color.gray
 				.cornerRadius(12)
-
+			
 			SubscriptionContentView(subscription: subscription)
 		}
 		.fixedSize(horizontal: false,

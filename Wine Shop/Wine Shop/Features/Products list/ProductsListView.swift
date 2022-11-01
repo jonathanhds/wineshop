@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct ProductsListView: View {
-
+	
 	@StateObject
 	private var viewModel = ProductsListViewModel()
-
+	
 	var body: some View {
 		Group {
 			switch viewModel.state {
@@ -24,7 +24,7 @@ struct ProductsListView: View {
 			await viewModel.fetchAllProducts()
 		}
 	}
-
+	
 	private func productsList(_ products: [Product]) -> some View {
 		List(products) { product in
 			NavigationLink(destination: ProductDetailsView(product: product)) {
